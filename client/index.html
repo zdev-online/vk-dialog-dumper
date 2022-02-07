@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VK Dialog Dumper By ZDev</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <section class="main-container">
+    <article class="header">
+      <h1 class="logo">VDD By ZDev</h1>
+      <div class="details">
+        <a target="_blank" rel="noopener noreferrer" href="https://t.me/zdev_onl1ne">Telegram</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://vk.com/id171745503">VKontakte</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/zdev-online/vk-dialog-dumper">GitHub</a>
+      </div>
+    </article>
+    <article class="interface-container" id="interface_container">
+      <form id="interface_form" class="interface-form">
+        <div class="form-error" id="form_error">
+          <p></p>
+        </div>
+        <div class="form-text-input">
+          <input type="text" name="token" placeholder="Введите токен доступа...">
+        </div>
+        <div class="form-text-input">
+          <input type="text" name="peer_id" placeholder="Введите ID диалога...">
+        </div>
+        <div class="form-radio-input">
+          <div class="title">
+            <p>Тип медиа</p>
+          </div>
+          <div class="radio">
+            <input type="radio" id="media_type_photo" name="media_type" value="photo" checked>
+            <label for="media_type_photo">Фото</label>
+            <input type="radio" id="media_type_audio" name="media_type" value="audio">
+            <label for="media_type_audio">Аудио</label>
+          </div>
+        </div>
+        <div class="form-radio-input">
+          <div class="title">
+            <p>Архивировать скачанные файлы?</p>
+          </div>
+          <div class="radio">
+            <input type="radio" id="arhive_files_1" name="archive" value="true">
+            <label for="arhive_files_1">Да</label>
+            <input type="radio" id="arhive_files_1" name="archive" value="true">
+            <input type="radio" id="arhive_files_2" name="archive" value="false" checked>
+            <label for="arhive_files_2">Нет</label>
+          </div>
+        </div>
+        <input type="submit" value="Начать">
+      </form>
+    </article>
+    <article class="info-container" id="info_container">
+      <div class="info-container-block" id="info_block"></div>
+    </article>
+  </section>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
