@@ -13,4 +13,4 @@ $ npm install
 
 ## Контакты разработчика:
 
-* [ZDev | Дневник разработчика](https://t.me/zdev_onl1ne)
+* [ZDev | Дневник разработчика](https://t.me/zdev_online)
